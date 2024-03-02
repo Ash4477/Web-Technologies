@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="content" content="COMSATS Non-Faculty Job Application Form">
+        <title>Job Application Form</title>
+    </head>
+
+    <style>
+        /* header stuff */
+        body{
+            padding: 10px 20px;
+        }
+        .header{
+            border: 5px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+        }
+        .logo{
+            width: 150px;
+        }
+        .hero-text{
+            display: inline-block;
+            text-align: center;
+        }
+        .image-box{
+            display: inline-block;
+            border: 1px solid black;
+            padding: 5px 5px 30px 5px;
+            width: 100px;
+            text-align: center;
+        }
+
+        /* form stuff */
+        form{
+            border: 5px solid black;
+        }
+
+        form, .footer{
+            margin: 20px 10px 20px 10px;
+        }
+
+        .order {
+            margin-top: 25px;
+        }
+
+        label{
+            cursor: pointer;
+        }
+
+        .label-box > label {
+            font-weight: bold;
+        }
+
+        .label-box > p {
+            margin-top: 0;
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+
+
+        .label-box:not(.table-block > .label-box){
+            display: inline-block;
+            margin-bottom: 20px;
+            width: 150px;
+            margin-top: 20px;
+        }
+
+        li {
+            padding-left: 30px;
+            display: flex;
+            gap: 50px;
+            align-items: start;
+            list-style-type: decimal;
+        }
+
+
+        li > input {
+            margin-top: 25px;
+        }
+
+        .sub-box{ 
+            display: flex;
+            margin-top: 25px;
+        }
+
+        li > input:not(input[type="radio"],input[type="checkbox"]) {
+            width: 50%;
+        }
+
+        .footer{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .table-block > .label-box {
+            display: flex;
+            flex-direction: row;
+            gap : 5px;
+            margin-top: 20px;
+        }
+        
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+            
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        td{
+            color: white;
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+            border-left: 1px solid black;
+            width: 100px;
+            height: 20px;
+        }
+
+        .for-sign{
+            display: inline-block;
+            margin-left: 10px;
+            width: 150px;
+            border-bottom: 2px solid black;
+        }
+
+       
+    </style>
+
+    <body>
+        <div class="header">
+            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/c/c0/COMSATS_new_logo.jpg" alt="comsats logo">
+            <span class="hero-text">
+                <h1 style="background-color: black; color:white; margin-bottom: -15px;">Non-Faculty Job Application Form</h1>
+                <h1>COMSATS University Islamabad CUI</h1>
+            </span>
+            <p class="image-box"><b>Affix a<br>recent<br>photograph<br>3cm x 5cm</b></p>
+        </div>
+
+        <form method="post" action="">
+            <ol>
+                <li>
+                    <span class="order">1.</span>
+                    <span class="label-box"><label for="post">Post applied for </label><p>(mention only position)</p></span>
+                    <input type="text" name="post" id="post">
+                </li>
+                <li>
+                    <span class="order">2.</span>
+                    <span class="label-box"><label for="dept">Department </label><p>(mention department, if required)</p></span>
+                    <input type="text" name="dept" id="dept">
+                </li>
+                <li>
+                    <span class="order">3.</span>
+                    <span  class="label-box"><label for="campus">Campus </label><p>(Please tick(✅) only one choice)</p></span>
+                    <span class="sub-box" >
+                    <label for="lahore" class="sub-label">Lahore </label>
+                    <input type="checkbox" name="campus" id="lahore" checked>
+                    </span>
+                    <span class="sub-box">
+                    <label for="attock" class="sub-label">Attock </label>
+                    <input type="checkbox" name="campus" id="attock">
+                    </span>
+                    <span class="sub-box">
+                    <label for="isb" class="sub-label">Islamabad </label>
+                    <input type="checkbox" name="campus" id="isb">
+                    </span>
+                    <span class="sub-box">
+                    <label for="wah" class="sub-label">Wah </label>
+                    <input type="checkbox" name="campus" id="wah">
+                    </span>
+                    <span class="sub-box">
+                    <label for="veh" class="sub-label">Vehari </label>
+                    <input type="checkbox" name="campus" id="veh">
+                    </span>
+                    <span class="sub-box">
+                    <label for="abt" class="sub-label">Abbotabad </label>
+                    <input type="checkbox" name="campus" id="abt">
+                    </span>
+                </li>
+                <li>
+                    <span class="order">4.</span>
+                    <span class="label-box"><label for="full-name">Name in full  </label><p>(Use CAPITAL LETTERS)</p></span>
+                    <input type="text" name="full-name" id="full-name">
+                </li>
+                <li>
+                    <span class="order">5.</span>
+                    <span class="label-box"><label for="father-name">Father Name  </label><p>(Use CAPITAL LETTERS)</p></span>
+                    <input type="text" name="father-name" id="father-name">
+                </li>
+                <li>
+                    <span class="order">6.</span>
+                    <span class="label-box"><label for="NIC">N.I.C #.  </label></span>
+                    <input type="text" pattern="\d{5}-\d{7}-\d" placeholder="Please enter the pattern in the format: 12345-1234567-1" name="NIC" id="NIC">
+                </li>
+                <li>
+                    <span class="order">7.</span>
+                    <span class="label-box"><label for="DOB">DOB </label></span>
+                    <input type="date" name="DOB" id="DOB">
+                </li>
+                <li>
+                    <span class="order">8.</span>
+                    <span class="label-box"><label for="email">Email  </label><p>(Mandatory, most of the future correspondence will be done using email address)</p></span>
+                    <input type="email" name="email" id="email" required>
+                </li>
+                <li>
+                    <span class="order">9.</span>
+                    <span class="label-box"><label>Gender:  </label></span>
+                    <span class="sub-box">
+                    <input type="radio" name="gender" id="gender1" value="M" checked>
+                    <label class="sub-label" for="gender1"><u>Male</u></label>
+                    </span>
+                    <span class="sub-box">
+                    <input type="radio" name="gender" id="gender2" value="F">
+                    <label class="sub-label" for="gender2"><u>Female</u></label>
+                    </span>
+                </li>
+                <li>
+                    <span class="order">10.</span>
+                    <span class="label-box">
+                        <label>Correspondence Postal Address</label>
+                    </span>
+                    <textarea rows="5" cols="35"></textarea>
+                </li>
+                <li class="col">
+                    <span class="order">11.</span>
+                    <div class="table-block">
+                    <span class="label-box">
+                    <label for="academic">Academic Record</label><p class="full">(Please start wit highest qualification and go down in descending order)</p>
+                    </span>
+                    <table id="academic">
+                        <tr>
+                            <th>Degree held</th>
+                            <th>Year of award</th>
+                            <th>Field</th>
+                            <th>Board/University</th>
+                            <th>Grade/Div</th>
+                        </tr>
+                        <tr>
+                            <td>x</td>
+                            <td>x</td>
+                            <td>x</td>
+                            <td>x</td>
+                            <td>x</td>
+                        </tr>
+                        <tr>
+                            <td>x</td>
+                            <td>x</td>
+                            <td>x</td>
+                            <td>x</td>
+                            <td>x</td>
+                        </tr>
+                        <tr>
+                            <td>x</td>
+                            <td>x</td>
+                            <td>x</td>
+                            <td>x</td>
+                            <td>x</td>
+                        </tr>
+                        <tr>
+                            <td>x</td>
+                            <td>x</td>
+                            <td>x</td>
+                            <td>x</td>
+                            <td>x</td>
+                        </tr>
+                    </table>
+                    </div>
+                </li>
+                <li class="col">
+                    <span class="order">12.</span>
+                    <div class="table-block">                      
+                    <span class="label-box">
+                    <label for="employ">Employment History</label><p class="full">(Please start from your most recent job and go down in descending order)</p>
+                    </span>
+                    <table id="employ">
+                        <tr>
+                            <th>Name of Organization</th>
+                            <th>Post held with Pay Scale</th>
+                            <th>Job Profile</th>
+                            <th>Period From to</th>
+                        </tr>
+                        <tr>
+                            <td>x</td>
+                            <td>x</td>
+                            <td>x</td>
+                            <td>x</td>
+                        </tr>
+                        <tr>
+                            <td>x</td>
+                            <td>x</td>
+                            <td>x</td>
+                            <td>x</td>
+                        </tr>
+                        <tr>
+                            <td>x</td>
+                            <td>x</td>
+                            <td>x</td>
+                            <td>x</td>
+                        </tr>
+                        <tr>
+                            <td>x</td>
+                            <td>x</td>
+                            <td>x</td>
+                            <td>x</td>
+                        </tr>
+                    </table>
+                    </div>
+                </li>
+            </ol>
+        </form>
+
+        <div class="footer">
+            <span>
+            <label style="font-weight: bold;">Dated: </label><div class="for-sign"></div>
+            </span>
+            <span>
+            <label style="font-weight: bold;">Signature: </label><div class="for-sign"></div>
+            </span>
+        </div>
+    </body>
+</html>
