@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table, tr, td{
+    height: 100%;
+}
+
+fieldset{
+    border: none;
+}
+
+.main{
+    max-width: 500px;
+}
+
+.left input{
+    background-color: #78ccf0;
+    border-color: #78ccf0;
+    border-style: none;
+    padding: 10px 15px;
+}
+
+input::placeholder{
+    color: white;
+}
+
+h2{
+    color: white;
+    font-weight: 400;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.left{
+    background-color: #4bbeed;
+    height: 73vh;
+    width: 20vw;
+    border-color: white;
+}
+
+.left tr:first-child{
+    height: 60px;
+}
+
+
+.info-row{
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-row {
+    margin-top: 18px;
+}
+
+.left tr:last-child{
+    text-align: center;
+}
+
+.left tr:last-child input{
+    width: 190px;
+    color: white;
+}
+
+.right{
+    background-color: white;
+    width: 30vw;
+    border-spacing: 20px 40px;
+    text-align: center;
+    border-top: 1px solid rgb(206, 200, 200);
+    border-bottom: 1px solid rgb(206, 200, 200);
+    border-right: 1px solid rgb(206, 200, 200);
+}
+
+.right input{
+    background-color: white;
+    border-color: white;
+    border-style:groove;
+    padding: 10px 15px;
+    width: 70%;
+}
+
+.right select {
+    padding: 10px 15px;
+    width: 83%;
+}
+
+.message-row{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message-row i {
+    border: 1.5px solid #ababab;
+    padding: 16.3px 10px 19px 10px;
+    color:#78ccf0;
+}
+
+.icon-row{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}

@@ -3,9 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d2f89adc8d.js" crossorigin="anonymous"></script>
+    <title>Lab04 Task2</title>
 </head>
 <body>
-    
+    <table class="main">
+        <tr>
+            <form method="post" name="message-form" action="">
+            <td>
+                <fieldset>
+                <table class="left">
+                    <tr>
+                        <th><h2>Contact Now</h2></th>
+                    </tr>
+                    <tr class="info-row">
+                        <td><input type="text" placeholder="Username"></td>
+                        <td><input type="password" placeholder="Password"></td>
+                        <td><input type="text" placeholder="Department"></td>
+                        <td><input type="text" placeholder="Message"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Send Message"></td>
+                    </tr>
+                </table>
+                </fieldset>
+            </td>
+            <td>
+                <fieldset>
+                    <table class="right">
+                        <tr>
+                            <td class="icon-row">
+                                <i class="fa-brands fa-square-facebook fa-2xl" style="color: rgb(46, 93, 205);"></i>
+                                <i class="fa-brands fa-square-twitter fa-2xl" style="color: #5fb7dd;"></i>
+                                <i class="fa-brands fa-square-google-plus fa-2xl"  style="color: rgb(203, 8, 8);"></i>
+                                <i class="fa-brands fa-linkedin fa-2xl"  style="color: rgb(35, 108, 186);"></i>
+                            </td>
+                        </tr>
+                        <tr class="message-row">
+                            <td><input type="text"><i class="fa-solid fa-user fa-xl"></i></td>
+                            <td><input type="email"><i class="fa-solid fa-envelope fa-xl"></i></td>
+                            <td>
+                                <select>
+                                    <option disabled selected hidden>Select a Department</option>
+                                    <option>CS</option>
+                                    <option>BBA</option>
+                                    <option>EE</option>
+                                    <option>Bio-Sciences</option>
+                                </select>
+                            </td>
+                            <td>
+                                <textarea cols="37" rows="10"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </td>
+            </form>
+        </tr>
+    </table>
 </body>
 </html>
