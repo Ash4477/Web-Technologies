@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In Screen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <table class="box login" cellspacing=>
+            <tr>
+                <th colspan="2">
+                    <h2>Member Login</h2>
+                </th>
+            </tr>
+                <form method="post" action="" name="login-form" autocomplete="on">
+                    <tr>
+                        <td colspan="2">
+                            <input type="text" name="user-name" placeholder="User Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="password" name="password" placeholder="Password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Forgot Password?</a>
+                            <input type="submit" value="Login">
+                        </td>
+                    </tr>
+                </form>
+        </table>
+
+        <table class="box signup">
+            <form method="post" action="" name="signup-form" autocomplete="on">
+                <tr>
+                    <th colspan="2">
+                        <h2>Sign Up-It's free</h2>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="user-name" placeholder="User Name">
+                    </td>
+                    <td>
+                        <input type="password" name="password" placeholder="Password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="email" name="email" placeholder="info@gmail.com">
+                    </td>
+                    <td>
+                        <input type="email" name="confirm-email" placeholder="Re-confirm email">
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <h3>Personal Details</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="first-name" placeholder="First Name">
+                    </td>
+                    <td>
+                        <input type="text" name="last-name" placeholder="Last Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>                        
+                        <input type="email" name="signup-email-1" placeholder="Your Email">
+                    </td>
+                    <td>
+                        <input type="email" name="signup-email-2" placeholder="Re-enter Email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="city" placeholder="City">
+                    </td>
+                    <td>
+                        <input type="text" name="province" placeholder="Province">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="address-1" placeholder="Address1">
+                    </td>
+                    <td>
+                        <input type="text" name="address-2" placeholder="Address2">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <select>
+                            <option disabled selected hidden>Country</option>
+                            <option>Pakistan</option>
+                            <option>Turkey</option>
+                            <option>India</option>
+                        </select>
+                    </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="sign up">
+                </td>
+            </tr>
+        </form>
+        </table>
+    </main>
+</body>
+</html>

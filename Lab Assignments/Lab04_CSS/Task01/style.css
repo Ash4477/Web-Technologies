@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 10px 20px;
+    background-color: grey;
+}
+
+.container{
+    background-color: #44424D;
+    width: 100%;
+    height: calc(100vh - 20px);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    background-color: #DFDFDF;
+}
+
+td, th, tr {
+    width: 100%;
+    height: 100%;
+}
+
+h2, h3 {
+    text-align: left;
+    padding: 10px 0 10px 15px;
+    background-color: #DFDFDF;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+h3 {
+    background-color: white;
+    padding: 5px 0 5px 10px;
+    font-weight: 800;
+}
+
+input, select {
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+}
+
+/*Login Box Stuff*/
+
+.box {
+    border-radius: 5px;
+    box-shadow: 2px 1px 2px 1px black;
+}
+
+.box.login {
+    margin-bottom: 30px;
+    width: 20vw;
+    height: 10vh;
+}
+
+.box.login tr:last-child  td:first-child{
+    width: 70%;
+    padding-left: 10px;
+    background-color: white;
+}
+
+.box.login tr:last-child  td:first-child > a{
+    color: grey;
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.box.login tr:last-child td{
+    width: 100% !important;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+
+input[type="submit"]{
+    background-color: #2b87c7;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.box.login td:last-child {
+    background-color: white;
+}
+
+input[value="Login"] {
+    width: 70px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+/*Signup Box Stuff*/
+
+
+.box.signup {
+    margin: 0 auto;
+    width: 40vw;
+    height: 30vh;
+    table-layout: fixed;
+}
+
+.box.signup tr:last-child{
+    text-align: center;
+    background-color: white;
+}
+
+.box.signup input[type="submit"] {
+    margin: 10px;
+    width: 80px;
+    height: 35px;
+}
+
