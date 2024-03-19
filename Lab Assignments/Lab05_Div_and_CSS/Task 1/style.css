@@ -1,0 +1,73 @@
+body{
+    background-color: #90ee90;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: left;
+    color: blue;
+}
+
+.nav {
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.nav td {
+    padding: 0.5rem 3rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nav a:hover{
+    color: #f9f97f;
+}
+
+#home a {
+    color: red;
+}
+
+#home a:hover {
+    color: rgb(250, 120, 120);
+}
+
+tbody ul p {
+    color: red;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0 auto;
+}
+
+#CIIT {
+    color: yellow;
+}
+
+.heading {
+    color: blue;
+    padding-left: 10px;
+}
+
+.text {
+    color: darkgreen;
+    padding: 0 20px;
+}
+
+.goTop a {
+    margin-left: 15px;
+    font-size: 1.5rem;
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
