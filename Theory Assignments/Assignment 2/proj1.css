@@ -1,0 +1,110 @@
+body{
+    background-color: #1f3543;
+}
+
+header, footer, main {
+    margin: 0em 15em 0.5em 15em;
+    min-width: 800px;
+}
+
+main{
+    background-color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+header, footer {
+    color: white;
+    background-color: #3D6271;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header h1, .sub-text, header li {
+    margin-left: 0.5rem;
+}
+
+header h1{
+    font-size: 2rem;
+}
+
+.sub-text{
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+header ul {
+    background-color: #728c98;
+    list-style: none;
+    padding: 0.3rem 0 0.2rem 0;
+}
+
+header li {
+    display: inline-block;
+}
+
+a{
+    color: #39b9d3;
+    font-weight: bold;
+}
+
+main a {
+    color: purple;
+}
+
+footer {
+    margin-bottom: 1.5rem;
+    padding: 1rem 0;
+}
+
+footer p {
+    padding-left: 1rem;
+}
+
+main h3, main p, figcaption{
+    margin-left: 1rem;
+}
+
+main h3{
+    font-size: 1.3rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+main hr {
+    margin: 0 1rem 0.3rem 1rem;
+}
+
+.author{
+    margin-bottom: 0.3rem;
+    color: grey;
+}
+
+#central-park{
+    border: 1px solid grey;
+    padding: 5px;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+figcaption{
+    font-style: italic;
+    color: grey;
+    margin-bottom: 1rem;
+}
+
+#first-pic{
+    margin-left: 1rem;
+}
+
+.dotted{
+    border-top: 1px dotted;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    padding-bottom: 1rem;
+}
+
+.user{
+    font-style: italic;
+    color: grey;
+}
