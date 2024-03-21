@@ -4,49 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="proj2.css">
     <title>Book Rep CRM</title>
 </head>
 <body>
     <header>
-        <h1>Not a Real CRM</h1>
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Catalog</a></li>
             <li><a href="#">Inventory</a></li>
         </ul>
+        <h1 id="main-title">!aCRM</h1>
+        <ul>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Tasks</a></li>
+            <li><a href="#">Evaluation Copies</a></li>
+        </ul>
     </header>
     <main>
-        <section>
-            <h2>Contacts</h2>
-            <h3>My CRM</h3>
-            <ul>
-                <li><a href="#">Contacts</a></li>
-                <li><a href="#">Orders</a></li>
-                <li><a href="#">Calendar</a></li>
-                <li><a href="#">Tasks</a></li>
-                <li><a href="#">Evaluation Copies</a></li>
-            </ul>
-        </section>
-        <article>
+        <section class="profile-box">
+            <a href="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/487714_v9_bb.jpg" target="_blank"><img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/487714_v9_bb.jpg" alt="profile picture"></a>
             <h3>Jack Smith</h3>
-            <address>
-            <p>Address: 1 Microsoft Way</p>
-            <p>City: Redmond</p>
-            <p>Region: WA</p>
-            <p>Country: USA</p>
-            <p>Postal: 98052-8300</p>
-            <p>Phone: +1(425)882-8080</p>
-            <p>Email: <a href="mailto::">jacksmith@microsoft.com</a></p>
-            </address>
-            <figure>
-                <img src="images/jack-smith-map.png" alt="Map for Jack Smith" title="Map for Jack Smith" width=200>
-                <figcaption><i>Map for Jack Smith</i></figcaption>
-            </figure>
-        </article>
+        </section>
         <section>
-            <h3>Last Contact Viewed</h3>
-            <a href="#">Camille Bernard</a>
-            <p>University of Paris</p>
+            <h2 class="section-header">Personal Details</h2>
+            <address class="section-content">
+                <p><label>Address:</label> 1 Microsoft Way</p>
+                <p><label>City:</label> Redmond</p>
+                <p><label>Region:</label> WA</p>
+                <p><label>Country:</label> USA</p>
+                <p><label>Postal:</label> 98052-8300</p>
+            </address>
+        </section>
+        <section>
+            <h2 class="section-header">Contact</h2>
+            <div class="section-content">
+                <p><label>Phone:</label> <a href="tel::">+1(425)882-8080</a></p>
+                <p><label>Email:</label> <a href="mailto::">jacksmith@microsoft.com</a></p>
+            </div>
+        </section>
+        <section>
+            <h2 class="section-header">Sales Activity</h2>
+            <div class="section-content">
+                <img src="./images/sales-activity.png" alt="sales activity bar graph">
+            </div>
         </section>
     </main>
     <footer>
