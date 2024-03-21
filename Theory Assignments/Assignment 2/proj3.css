@@ -1,0 +1,59 @@
+body{
+    background-image: url("./images/art-background4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header, main{
+    margin-left: 10rem;
+    background-color: white;
+    display: inline-block;
+}
+
+header{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1rem 4rem 2rem 2rem;
+}
+
+header h1{
+    font-family: "Six Caps", sans-serif;
+    font-size: 3rem;
+}
+
+main{
+    margin-top: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main h2{
+    background-color: #c9c6c2;
+    padding: 0.5rem 15rem 0.5rem 1rem;
+}
+
+.middle{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(0,0,0,.5);
+    padding: 2rem 1rem;
+}
+
+.middle p{
+    margin-bottom: 0.3rem;
+}
+
+.middle time{
+    padding: 0.2rem 1rem 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    color: white;
+    background-color: rgba(0,0,0,.7);
+}
+
+main a{
+    display: block;
+    background-color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+main a img {
+    width: 13px;
+}
