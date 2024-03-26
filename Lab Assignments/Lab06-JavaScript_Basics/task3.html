@@ -7,8 +7,16 @@
 </head>
 <body>
     <script>
-            document.write("SHIT");
-            alert("DAMN");
+            let num;
+            let message;
+
+            num = Number(prompt("Enter Number: "));
+            message = prompt("Enter Message: ");
+
+            for (let i = 0; i < num; i++) {
+                document.write(message);
+            }
+
     </script>
 </body>
 </html>
