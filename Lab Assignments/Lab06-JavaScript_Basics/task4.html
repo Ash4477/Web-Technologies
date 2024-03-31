@@ -104,10 +104,10 @@
     <form method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
       <tr>
           <td class="input-td">
-              <input type="text" name="first-name" placeholder="   First Name">
+              <input type="text" name="first-name" placeholder="   First Name" required>
           </td>
           <td class="input-td">
-            <input type="text" name="last-name" placeholder="   Last Name">
+            <input type="text" name="last-name" placeholder="   Last Name" required>
           </td>
       </tr>
       <tr>
@@ -137,6 +137,7 @@
   <script>
 
     function validateForm() {
+
         if (validateEmail() && validatePassword()){
             alert("Form Submitted :)");
         }
@@ -144,6 +145,8 @@
         else{
             alert("Failed :(");
         }
+
+        return false;
     }
 
     function validateEmail(){
