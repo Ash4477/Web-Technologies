@@ -1,14 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab Task 4</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignUp Form</title>
+  <script src="https://kit.fontawesome.com/d2f89adc8d.js" crossorigin="anonymous"></script>
 </head>
+
+<style>
+  body{
+    margin: 0;
+    background-color: #404c54;
+    color: white
+  }
+
+  .header, .footer{
+    background-color: rgb(179, 179, 179);
+    width: 100%;
+    height: 50px;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+  td > p > a {
+    color: rgb(41, 122, 184);
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: 20px auto;
+  }
+            
+  td {
+    text-align: center;
+    margin: 0;
+  }
+
+  .social{
+    width: 50%;
+    height: 10px;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .social > a > p {
+    display: inline-block;
+    margin-left: 90px;
+  }
+
+  .social.f {
+    background-color: #4267B2;
+  }
+
+  .social.t {
+    background-color: #1DA1F2;
+  }
+
+  .input-td {
+    height: 70px;
+    overflow: hidden;
+  }
+
+  .input-td > input {
+    width: 100%;
+    height: 60%;
+  }
+
+  input[type="submit"]{
+    background-color: rgb(31, 183, 112);
+    color: white;
+  }
+
+  .text-left{
+    text-align: left;
+  }
+
+</style>
+
 <body>
-    <script>
-            document.write("SHIT");
-            alert("DAMN");
-    </script>
+  <div class="header"></div>
+  <table>
+    <tr>
+      <td class="social f">
+        <a href="https://www.facebook.com/">
+          <i class="fa-brands fa-facebook-f"></i>
+          <p>Connect with Facebook</p>
+        </a>
+      </td>
+      <td class="social t">
+        <a href="https://twitter.com/?lang=en">  
+          <i class="fa-brands fa-twitter"></i>
+          <p>Connect with Twitter</p>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td class="signup-label" colspan="2"><p>or sign up with</p></td>
+    </tr>      
+    <form method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+      <tr>
+          <td class="input-td">
+              <input type="text" name="first-name" placeholder="   First Name">
+          </td>
+          <td class="input-td">
+            <input type="text" name="last-name" placeholder="   Last Name">
+          </td>
+      </tr>
+      <tr>
+          <td class="input-td" colspan="2">
+            <input type="email" name="email" placeholder="   Only gmail accounts allowed" required>
+          </td>
+      </tr>
+      <tr>
+          <td class="input-td" colspan="2">
+            <input type="password" name="password" placeholder="   Password should be 8 characters long" required>
+          </td>
+      </tr>
+      <tr> 
+          <td class="text-left" colspan="2">
+            <p>By creating an account, you agree to our <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Terms and conditions</a></p>
+          </td>
+      </tr>
+      <tr>
+        <td class="input-td" colspan="2">
+          <input type="submit" value="Create account">
+        </td>
+      </tr>
+    </form>
+  </table>
+  <div class="footer"></div>
+
+  <script>
+
+    function validateForm() {
+        if (validateEmail() && validatePassword()){
+            alert("Form Submitted :)");
+        }
+
+        else{
+            alert("Failed :(");
+        }
+    }
+
+    function validateEmail(){
+        const email = document.querySelector('input[name = "email"]');
+        const gmailCheck = email.value.slice(-9);
+        console.log(gmailCheck);
+        if (gmailCheck == "gmail.com"){
+            console.log("SHIT");
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    
+    function validatePassword(){
+        const password = document.querySelector("input[name = 'password']");
+
+        if (password.value.length < 8) {
+            return false;
+        }
+
+        else{
+            return true;
+        }
+    }
+
+    const submitBtn = document.querySelector("input[type='submit']");
+    
+    submitBtn.addEventListener("click", () => {
+        if (!validateEmail()) {
+            alert("Incorrect Email Format!");
+            return;
+        }
+
+        if (!validatePassword()) {
+            alert("Incorrect Password Format!");
+            return;
+        }
+    });
+
+  </script>
 </body>
 </html>
