@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="chapter04-project01.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <table border="1">
+        <caption>April 2024</caption>
+        <tr>
+            <th title="Sunday">S</th>
+            <th title="Monday">M</th>
+            <th title="Tuesday">T</th>
+            <th title="Wednesday">W</th>
+            <th title="Thursday">T</th>
+            <th title="Friday">F</th>
+            <th title="Saturday">S</th>
+        </tr>
+        <tr>
+            <td colspan="1"></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td id="current-day">4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><a href="#">&laquo; Mar</a></td>
+            <td></td>
+            <td colspan="3"><a href="#">Nov &raquo;</a></td>
+        </tr>
+    </table>
+
+    <form method="POST" action="https://www.randyconnolly.com/tests/process.php">
+        <fieldset>
+            <legend>Meeting Details</legend>
+
+            <div class="input-block">
+                <label for="cl-name">Client Name:</label>
+                <input type="text" id="cl-name" name="cl-name" placeholder="Enter name">
+            </div>
+
+            <div class="input-block">
+                <label for="f-meet">First Meeting?</label>
+                <input type="checkbox" id="f-meet" name="f-meet">
+            </div>
+
+            <div class="input-block">
+                <label>Client Type:</label>
+                <span class="radio-op">
+                    <input type="radio" name="cl-type" id="cl-type-school" checked>
+                    <label for="cl-type-school">School</label>
+                </span>
+                <span class="radio-op">
+                    <input type="radio" name="cl-type" id="cl-type-college">
+                    <label for="cl-type-college">College</label>
+                </span>
+
+                <span class="radio-op">
+                    <input type="radio" name="cl-type" id="cl-type-uni">
+                    <label for="cl-type-uni">University</label>
+                </span>
+            </div>
+            <div class="input-block">
+                <label for="meet-date">Meeting Date:</label>
+                <input type="date" name="meet-date" id="meet-date">
+            </div>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
