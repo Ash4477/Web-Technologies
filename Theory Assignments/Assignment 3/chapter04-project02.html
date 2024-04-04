@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Store</title>
+    <link rel="stylesheet" href="chapter04-project02.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <form method="POST" action=" http://www.randyconnolly.com/tests/process.php">
+        <fieldset>
+            <input name="search-value" type="search" placeholder="Search titles">
+            <input type="submit" value="Search">
+        </fieldset>
+        <fieldset>
+            <select name="actions-dropdown">
+                <option value="0" disabled selected>Actions</option>
+                <option value="1">Archive</option>
+                <option value="2">Delete</option>
+            </select>
+            <input type="submit" value="Apply">
+
+            <select name="genre-dropdown">
+                <option value="0" disabled selected>Genre</option>
+                <option value="1">Baroque</option>
+                <option value="2">Renaissance</option>
+                <option value="3">Realism</option>
+            </select>
+            <input type="submit" value="Filter">
+        </fieldset>
+        <fieldset>
+            <table cell-spacing="5">
+                <caption>Paintings</caption>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col" title="Preview"></th>
+                    <th scope="col" title="Title">Title</th>
+                    <th scope="col" title="Artist">Artist</th>
+                    <th scope="col" title="Year">Year</th>
+                    <th scope="col" title="Genre">Genre</th>
+                    <th scope="col" title="Edit Buttons"></th>
+                </tr>
+                <tr>
+                    <td><input name="index[0]" type="checkbox" value="140"></td>
+                    <td><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Death_of_Marat_by_David.jpg/1200px-Death_of_Marat_by_David.jpg" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Death_of_Marat_by_David.jpg/1200px-Death_of_Marat_by_David.jpg" alt="death of marat painting"></a></td>
+                    <td>Death of Marat</td>
+                    <td>David, Jacques-Louis</td>
+                    <td>1793</td>
+                    <td>Romanticism</td>
+                    <td><button><a href="#">Edit</a></button></td>
+                </tr>
+                <tr>
+                    <td><input name="index[1]" type="checkbox" value="275"></td>
+                    <td><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bronzino_-_Eleonora_di_Toledo_col_figlio_Giovanni_-_Google_Art_Project.jpg/1200px-Bronzino_-_Eleonora_di_Toledo_col_figlio_Giovanni_-_Google_Art_Project.jpg" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bronzino_-_Eleonora_di_Toledo_col_figlio_Giovanni_-_Google_Art_Project.jpg/1200px-Bronzino_-_Eleonora_di_Toledo_col_figlio_Giovanni_-_Google_Art_Project.jpg" alt="portrait of eleanor of tolde painting"></a></td>
+                    <td>Portrait of Eleanor of Toledo</td>
+                    <td>Brazino, Agnolo</td>
+                    <td>1545</td>
+                    <td>Mannerism</td>
+                    <td><button><a href="#">Edit</a></button></td>
+                </tr>
+                <tr>
+                    <td><input name="index[2]" type="checkbox" value="150"></td>
+                    <td><a href="https://upload.wikimedia.org/wikipedia/commons/5/5d/Eug%C3%A8ne_Delacroix_-_Le_28_Juillet._La_Libert%C3%A9_guidant_le_peuple.jpg" target="_blank"><img class="more-width" src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Eug%C3%A8ne_Delacroix_-_Le_28_Juillet._La_Libert%C3%A9_guidant_le_peuple.jpg" alt="liberty leading the people painting"></a></td>
+                    <td>Liberty Leading the People</td>
+                    <td>Delacroix, Eugene</td>
+                    <td>1830</td>
+                    <td>Romanticism</td>
+                    <td><button><a href="#">Edit</a></button></td>
+                </tr>
+                <tr>
+                    <td><input name="index[3]" type="checkbox" value="700"></td>
+                    <td><a href="https://upload.wikimedia.org/wikipedia/commons/1/1b/Whistlers_Mother_high_res.jpg" target="_blank"><img class="more-width" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Whistlers_Mother_high_res.jpg" alt="arrangement in grey and black painting"></a></td>
+                    <td>Arrangement in Grey and Black</td>
+                    <td>Whistler, James Abbott</td>
+                    <td>1871</td>
+                    <td>Realism</td>
+                    <td><button><a href="#">Edit</a></button></td>
+                </tr>
+                <tr>
+                    <td><input name="index[4]" type="checkbox" value="350"></td>
+                    <td><a href="https://upload.wikimedia.org/wikipedia/commons/3/34/Jean_Auguste_Dominique_Ingres_-_Mademoiselle_Caroline_Rivi%C3%A8re_-_WGA11837.jpg" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Jean_Auguste_Dominique_Ingres_-_Mademoiselle_Caroline_Rivi%C3%A8re_-_WGA11837.jpg" alt="mademoiselle caroline riviere painting"></a></td>
+                    <td>Mademoiselle Caroline Riviere</td>
+                    <td>Ingres, Jean-Auguste</td>
+                    <td>1806</td>
+                    <td>Neo-Classicism</td>
+                    <td><button><a href="#">Edit</a></button></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
