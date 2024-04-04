@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Photo App</title>
+    <link rel="stylesheet" href="chapter04-project03.css">
+</head>
+<body>
+    <form method="POST" action="http://www.randyconnolly.com/tests/process.php">
+        <fieldset>
+            <legend>Photo Details</legend>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="desc">Description</label>
+                        <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="select-div">
+                            <label for="list-continent">Continent</label>
+                            <select name="list-continent" id="list-continent">
+                                <option value="0" disabled selected>Choose continent</option>
+                                <option value="1">Asia</option>
+                                <option value="2">North America</option>
+                                <option value="3">South America</option>
+                                <option value="4">Africa</option>
+                            </select>
+                        </div>
+                        <div class="select-div">
+                            <label for="list-country">Country</label>
+                            <select name="list-country" id="list-country">
+                                <option value="0" disabled selected>Choose country</option>
+                                <option value="1">USA</option>
+                                <option value="2">Pakistan</option>
+                                <option value="3">India</option>
+                                <option value="4">China</option>
+                                <option value="5">Japan</option>
+                                <option value="6">Nigeria</option>
+                            </select>
+                        </div>
+                        <div class="select-div">
+                            <label for="city">City</label>
+                            <input type="text">
+                        </div>
+                    </td>
+                    <td >
+                        <div class="blue-border">
+                            <p>Copyright?</p>
+                            <div class="option-label">
+                                <input type="radio" name="copyright-choice" id="radio1">
+                                <label for="radio1">All rights reserved</label>
+                            </div>
+                            <div class="option-label">
+                                <input type="radio" name="copyright-choice" id="radio2">
+                                <label for="radio2">Creative Commons</label>
+                            </div>
+                        </div>
+                        <div class="blue-border">
+                            <p>Creative Commons Types</p>
+                            <div class="opiton-label">
+                                <input type="checkbox" name="Index[0]" id="Index[0]" value="1"><label for="Index[0]">Attribution</label>
+                            </div>
+                            <div class="opiton-label">
+                                <input type="checkbox" name="Index[1]" id="Index[1]" value="2"><label for="Index[1]">Noncommercial</label>
+                            </div>
+                            <div class="opiton-label">
+                                <input type="checkbox" name="Index[2]" id="Index[2]" value="3"><label for="Index[2]">No Derivative Works</label>
+                            </div>
+                            <div class="opiton-label">
+                                <input type="checkbox" name="Index[3]" id="Index[3]" value="4"><label for="Index[3]">Share Alike</label>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">I accept the software license <input type="checkbox" name="license-choice" value="1"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="select-div">
+                            <label for="rate-photo">Rate this photo:</label>
+                            <input type="number" min="0" max="10" name="rate-photo" id="rate-photo">
+                        </div>
+                        <div class="select-div">
+                            <label for="color-choice">Color Collection:</label>
+                            <input type="color" name="color-choice" id="color-choice">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="blue-border date-time">
+                            <label for="date-taken">Date Taken:</label>
+                            <br>
+                            <input type="date" name="date-taken" id="date-taken">
+                            <br>
+                            <label for="time-taken">Time Taken:</label>
+                            <br>
+                            <input type="time" name="time-taken" id="time-taken">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Submit">
+                        <input type="reset">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

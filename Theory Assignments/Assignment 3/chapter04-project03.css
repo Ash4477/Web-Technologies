@@ -1,0 +1,90 @@
+p {
+    margin: 0;
+}
+
+fieldset{
+    border: 1px solid black;
+    margin: 1rem 15rem;
+    padding: 1rem 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+fieldset legend{
+    text-align: center;
+    background-color: #ecf6fc;
+    padding: 0.2rem 10rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+td{
+    width: 100%;
+}
+
+tr:first-child td input, tr:nth-child(2) td textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 0.2rem;
+}
+
+tr:nth-child(3) td:nth-child(1), tr:nth-child(5) td:nth-child(1){
+    width: 75%;
+}
+
+.blue-border{
+    border: 2px solid #96bce3;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.blue-border:first-child{
+    margin-top: 1rem;
+}
+
+.opiton-label input{
+    width: unset;
+    vertical-align: middle;
+    margin: 0 0.5rem 0 0.3rem;
+}
+
+.select-div{
+    margin-bottom: 0.7rem;
+}
+
+.select-div label{
+    display: block;
+}
+
+.select-div input[type="text"]{
+    width: 90%;
+}
+
+tr:nth-child(4){
+    margin-bottom: 5rem;
+}
+
+tr:nth-child(4) td {
+    padding: 0.5rem;
+}
+
+tr:nth-child(4), tr:last-child {
+    background-color: #ecf6fc;
+}
+
+tr:last-child{
+    text-align: center;
+}
+
+tr:last-child input{
+    background-color: #8a9bbe;
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+}
+
+.date-time input{
+    margin-bottom: 0.5rem;
+}
